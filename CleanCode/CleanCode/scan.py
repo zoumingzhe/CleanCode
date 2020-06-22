@@ -9,9 +9,9 @@
 # MAP：
 # 已测试 | version(self, ...)           | 版本显示
 # ----------------------------------------------------------------------------------------------------
-import ztools.file.filebase as filebase
+from ztools import filebase
 # ----------------------------------------------------------------------------------------------------
-class scan:
+class scan(filebase):
     """
     scan类提供扫描器支持。
     """
@@ -29,15 +29,4 @@ class scan:
         if(isShow):
             print("[CleanCode]-[scan]-[vesion:%s]" % self.__version)
         return self.__version
-# ----------------------------------------------------------------------------------------------------
-    def scan(self, directory):
-        """
-        扫描文件：
-        输入参数：directory, sub=False, prefix=None, postfix=None
-        返回参数：info
-        说明：该方法在指定目录（directory）下进行文件扫描，
-        参数sub指定是否对子目录扫描（默认不扫描），
-        参数prefix、postfix分别指定文件名的前缀和后缀。
-        """
-        return filebase.scan(self, directory, sub=True, prefix=None, postfix=None)
 # ----------------------------------------------------------------------------------------------------
