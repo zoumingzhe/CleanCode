@@ -18,7 +18,7 @@ except ImportError:
 setup(
     name="CleanCode",
     description="Clean Code",
-    version="0.1.0",
+    version="0.1.1",
     author="Zou Mingzhe",
     author_email="zoumingzhe@qq.com",
     url="https://github.com/zoumingzhe/CleanCode",
