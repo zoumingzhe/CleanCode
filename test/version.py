@@ -1,5 +1,5 @@
 ﻿import sys
-sys.path.append(r'.\CleanCode\CleanCode')
+sys.path.append(r'..\CleanCode\CleanCode')
 import clean
 import scan
 
