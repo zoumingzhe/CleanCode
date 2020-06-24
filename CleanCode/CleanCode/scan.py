@@ -17,7 +17,6 @@ class scan(filebase):
     """
     def __init__(self):
         self.__version = "0.1"
-        self.__path = {}
 # ----------------------------------------------------------------------------------------------------
     def version(self, isShow = False):
         """
